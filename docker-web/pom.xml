@@ -127,11 +127,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.3</version>
+				<version>3.3.1</version>
 				<configuration>
 					<warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-
 					<webResources>
 						<resource>
 							<directory>src/main/resources/env/${deployTarget}</directory>
@@ -148,7 +147,7 @@
 							</includes>
 						</resource>
 					</webResources>
-
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 

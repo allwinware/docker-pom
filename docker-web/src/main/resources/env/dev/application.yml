@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: local # 기본 환경 선택
+server:
+  port: 8200
+
+---
+
+########################################################################################################################
+### 로컬
+########################################################################################################################
+spring:
+  profiles: local
+  fmd:
+    write:  # GM Write DB (DEV)
+      datasource:
+        hikari:
+          driver-class-name: com.mysql.jdbc.Driver
+          jdbc-url: jdbc:mysql://127.0.0.1:3306/GM2_DEV_DB
+          username: FMD_DB_DEV
+          password: abcdefg
+          pool-name: ags-write-hikari-cp
+          maximum-pool-size: 1
+          minimum-idle: 1
+          cachePrepStmts: true
+          prepStmtCacheSize: 250
+          prepStmtCacheSqlLimit: 2048
+          useServerPrepStmts: true
+
+
+
+
+
+
+
+
+
+
+
+

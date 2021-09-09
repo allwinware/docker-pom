@@ -114,20 +114,20 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-
 					<webResources>
 						<webResource>
 							<directory>src/main/resources/${deployTarget}/</directory>
 							<targetPath>WEB-INF/classes/resources</targetPath>
 						</webResource>
 					</webResources>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.3</version>
+				<version>3.3.1</version>
 				<configuration>
 					<warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
