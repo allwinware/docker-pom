@@ -114,13 +114,13 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-
 					<webResources>
 						<webResource>
 							<directory>src/main/resources/${deployTarget}/</directory>
 							<targetPath>WEB-INF/classes/resources</targetPath>
 						</webResource>
 					</webResources>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 
@@ -147,7 +147,6 @@
 							</includes>
 						</resource>
 					</webResources>
-					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 
