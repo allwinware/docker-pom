@@ -30,5 +30,5 @@ ENV TZ="Asia/Seoul"
 RUN ln -fns /usr/share/zoneinfo/$TZ /etc/localtime
 RUN echo $TZ > /etc/timezone
 #RUN rm -rf /usr/local/tomcat/webapps/ROOT
-COPY repo/target/docker-web.war /usr/local/tomcat/webapps/ROOT.war
+COPY /C/Users/allwin/.jenkins/workspace/build-docker-pom/docker-api/target/docker-web.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8009 8080 8443
