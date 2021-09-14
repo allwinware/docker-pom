@@ -34,13 +34,13 @@ import lombok.extern.slf4j.Slf4j;
 public class TestDockerApiController {
 
 	@ResponseBody
-	@RequestMapping(value="/test/msg2"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/test/msg"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
 	public Object testLogYml(/*@RequestBody AgsPaySnInfo agsPaySnInfo, */HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		log.debug("####################################################################################################");
 		log.debug("Docker API Test");
 		log.debug("####################################################################################################");
 
-		return new RltStat("200","Test Docker API",HttpStatus.ACCEPTED);
+		return new RltStat("200","Test Docker API - ver 39",HttpStatus.ACCEPTED);
 	}
 }
