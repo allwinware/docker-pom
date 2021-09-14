@@ -34,7 +34,7 @@ import lombok.extern.slf4j.Slf4j;
 public class TestDockerWebController {
 
 	@ResponseBody
-	@RequestMapping(value="/test/msg1"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/test/msg2"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
 	public Object testLogYml(/*@RequestBody AgsPaySnInfo agsPaySnInfo, */HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		log.debug("####################################################################################################");
