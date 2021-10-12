@@ -11,8 +11,5 @@ COPY ./target/docker-web.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
-<<<<<<< HEAD
+
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
-=======
-CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
->>>>>>> 7f7bca085bb78c4738177663401af5cf2327ba33
