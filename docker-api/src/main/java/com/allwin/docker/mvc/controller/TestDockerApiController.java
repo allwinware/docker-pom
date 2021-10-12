@@ -41,6 +41,6 @@ public class TestDockerApiController {
 		log.debug("Docker API Test");
 		log.debug("####################################################################################################");
 
-		return new RltStat("200","Test Docker API - ver 42",HttpStatus.ACCEPTED);
+		return new RltStat("200","Test Docker API - ver 43",HttpStatus.ACCEPTED);
 	}
 }

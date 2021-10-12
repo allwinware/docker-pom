@@ -41,7 +41,7 @@ public class TestDockerWebController {
 		log.debug("Docker WEB Test");
 		log.debug("####################################################################################################");
 
-		return new RltStat("200","Test Docker WEB - ver 42",HttpStatus.ACCEPTED);
+		return new RltStat("200","Test Docker WEB - ver 43",HttpStatus.ACCEPTED);
 	}
 }
 
