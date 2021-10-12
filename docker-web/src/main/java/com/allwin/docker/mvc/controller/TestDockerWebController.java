@@ -34,14 +34,14 @@ import lombok.extern.slf4j.Slf4j;
 public class TestDockerWebController {
 
 	@ResponseBody
-	@RequestMapping(value="/test/web"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/test/msg"	,produces=MediaType.APPLICATION_JSON_VALUE	,method={RequestMethod.GET, RequestMethod.POST})
 	public Object testLogYml(/*@RequestBody AgsPaySnInfo agsPaySnInfo, */HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		log.debug("####################################################################################################");
 		log.debug("Docker WEB Test");
 		log.debug("####################################################################################################");
 
-		return new RltStat(HttpStatus.ACCEPTED);
+		return new RltStat("200","Test Docker WEB - ver 42",HttpStatus.ACCEPTED);
 	}
 }
 
